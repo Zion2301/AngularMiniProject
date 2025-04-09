@@ -183,7 +183,6 @@
     border-radius: 15px;
     display: flex;
     align-items: center;
-    max-height: 200px;
     justify-content: space-between;
   }
 
@@ -519,4 +518,22 @@
           flex-direction: column;
     }
 
+}
+
+@media screen and (max-width: 535px){
+  .visa {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 404px){
+  .top2 {
+     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 311px){
+  .bottomdiv {
+     padding: 10px;
+  }
 }

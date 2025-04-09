@@ -1,5 +1,5 @@
-body {
-    background-color: rgb(235, 235, 235);
+.maindiv {
+    background-color: rgb(241, 241, 241);
     width: 100%;
     display: flex;
 }
@@ -12,10 +12,377 @@ body {
 
 .bird {
     width: 80px;
-    border-bottom: 1px solid grey;
+    border-bottom: 2px solid rgb(224, 224, 224);
+    border-right: 2px solid rgb(224, 224, 224);
 }
 
 .rightside {
-    width: 90%;
-    background-color: blue;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
 }
+
+.home {
+    color: gray;
+}
+
+.home-original {
+    background-color: white;
+    border-radius: 50px;
+}
+
+.icons {
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 35px;
+    padding-top: 15px;
+    gap: 80px;
+    border-right: 2px solid rgb(224, 224, 224);
+    padding-right: 44px;
+    height: 100vh;
+}
+
+.nav {
+    border-bottom: 2px solid rgb(224, 224, 224);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.icondiv {
+    background-color: white;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.search {
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid rgb(224, 224, 224);
+}
+
+.bellandsearch {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.underdiv {
+    width: 100%;
+    padding: 10px;
+}
+
+.innerunderdiv {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid rgb(224, 224, 224);
+}
+
+.card {
+    width: 33.3%;
+    border: 2px solid rgb(224, 224, 224);
+    border-radius: 15px;
+}
+
+.download {
+    color: green;
+    background-color: rgba(0, 128, 0, 0.236);
+    backdrop-filter: blur(8px); /* apply blur behind */
+    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 128, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 128, 0, 0.2);
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  .download2 {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.236);
+    backdrop-filter: blur(8px); /* apply blur behind */
+    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2);
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+
+  .download3 {
+    color: orange;
+    background-color: rgba(255, 165, 0, 0.236);
+    backdrop-filter: blur(8px); /* apply blur behind */
+    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 165, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(255, 165, 0, 0.2);
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  
+
+.dash {
+    font-size: 18px;
+}
+
+.undercard {
+    background-color: rgb(241, 241, 241);
+    border-top: 2px solid rgb(224, 224, 224);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-top: 10px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.uppercard {
+    display: flex;
+    flex-direction: column;
+}
+
+.good {
+    color: grey;
+    padding-left: 15px;
+    padding-top: 30px;
+}
+
+.number {
+    font-size: 17px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 0px;
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+.increase {
+    padding-left: 15px;
+    padding-top: 5px;
+    color: green;
+    background-color: rgba(0, 128, 0, 0.164);
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.guy {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.from {
+    color: grey;
+}
+
+.calendar {
+    width: 5px;
+}
+
+.card-divs {
+    display: flex;
+    gap: 20px;
+}
+.bardiv {
+    max-height: 400px;
+    margin-top: 30px;
+    border: 2px solid rgb(224, 224, 224);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.canvas {
+    height: 400px;
+    width: 100%;
+}
+
+.total {
+    padding-left: 25px;
+}
+
+.total2 {
+    padding-left: 25px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(0, 0, 44);
+}
+
+.piediv {
+    width: 50%;
+    border: 2px solid rgb(224, 224, 224);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.pieandtablediv {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.pie2 {
+    padding-left: 25px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(0, 0, 44);
+    border-bottom: 2px solid rgb(224, 224, 224);
+    padding-bottom: 10px;
+}
+
+.table-wrapper {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1rem;
+    font-family: 'Inter', sans-serif;
+    border: 2px solid rgb(224, 224, 224);
+    width: 50%;
+  }
+  
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead th {
+    text-align: left;
+    font-size: 14px;
+    color: #6b7280;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  tbody td {
+    padding: 16px 0;
+    border-bottom: 1px solid #f3f4f6;
+    vertical-align: middle;
+  }
+  
+  .product-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .product-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .name {
+    font-weight: 500;
+    color: #111827;
+  }
+  
+  .subtitle {
+    font-size: 13px;
+    color: #6b7280;
+  }
+  
+  .align-right {
+    text-align: right;
+    font-weight: 500;
+    color: #111827;
+  }
+  
+  .view-more {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 14px;
+    color: #4f46e5;
+    cursor: pointer;
+  }
+  
+  .view-more .arrow {
+    font-size: 14px;
+    vertical-align: middle;
+  }
+
+  @media screen and (max-width: 961px){
+       .leftside {
+        width: 5%;
+       }
+  }
+
+  @media screen and (max-width: 870px){
+      .maindiv {
+        flex-direction: column-reverse;
+      }
+
+      .leftside {
+        flex-direction: row;
+        width: 100%;
+      }
+
+      .icons {
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .pieandtablediv {
+        flex-direction: column;
+      }
+
+      .table-wrapper, .piediv {
+        width: 100%;
+      }
+  }
+
+  @media screen and (max-width: 708px){
+    .guy {
+        width: 10%;
+        height: auto;
+    }
+
+    .card-divs {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .icons {
+        padding: 0px;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+      .guy {
+        display: none;
+      }
+  }
+
+  @media screen and (max-width: 500px){
+       .icons {
+        gap: 10px;
+       }
+  }
+  
+

@@ -1,35 +1,182 @@
-<body>
-    <div class="leftnav">
+
+    <div class="maindiv">
+      <div class="leftnav">
         <div class="leftside">
             <img src="/bird.png" alt="" class="bird">
             <div class="icons">
-                <mat-list>
-                    <mat-list-item>
-                        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
-                    </mat-list-item>
-                    <mat-list-item>
-                      <mat-icon>bar_chart</mat-icon> 
-                      <span>Analytics</span>
-                    </mat-list-item>
-                    <mat-list-item>
-                      <mat-icon>credit_card</mat-icon> 
-                      <span>Transactions</span>
-                    </mat-list-item>
-                    <mat-list-item>
-                      <mat-icon>account_balance</mat-icon> 
-                      <span>Accounts</span>
-                    </mat-list-item>
-                    <mat-list-item>
-                      <mat-icon>settings</mat-icon> 
-                      <span>Settings</span>
-                    </mat-list-item>
-                  </mat-list>
-                  
+                  <mat-icon class="home-original">home</mat-icon> 
+                 <mat-icon class="home">bar_chart</mat-icon>
+                 <mat-icon class="home">credit_card</mat-icon>
+                 <mat-icon class="home">account_balance</mat-icon>
+                 <mat-icon class="home">settings</mat-icon>
+                 <img src="/guy.jpg" alt="guy" class="guy">
             </div>
         </div>
     </div>
 
     <div class="rightside">
+        <nav class="nav">
+        <p class="dash">Dashboard</p>
 
+        <div class="bellandsearch">
+          <div class="icondiv">
+            <mat-icon class="not">notifications</mat-icon>
+          </div>
+          <input type="searh" placeholder="Search......" class="search">
+        </div>
+        </nav>
+
+        <div class="underdiv">
+         <div class="innerunderdiv">
+             <div class="card-divs">
+              <div class="card">
+                <mat-icon class="download">check_circle</mat-icon>
+                   <p class="good">Total Good Transactions</p>
+                   <p class="number">7055</p>
+                <div class="undercard">
+                  <p class="increase">+12%</p>
+                  <p class="from">From last month</p>
+                </div>
+               </div>
+
+               <div class="card">
+                <mat-icon class="download2">warning</mat-icon>
+                   <p class="good">Anomalies Detected</p>
+                   <p class="number">1000</p>
+                <div class="undercard">
+                  <p class="increase">-12%</p>
+                  <p class="from">From last month</p>
+                </div>
+               </div>
+
+               <div class="card">
+                <mat-icon class="download3">help_outline</mat-icon>
+                   <p class="good">Suspicious Transactions</p>
+                   <p class="number">7055</p>
+                <div class="undercard">
+                  <p class="increase">+12%</p>
+                  <p class="from">From last month</p>
+                </div>
+               </div>
+             </div>
+
+             <div class="bardiv">
+              <p class="total">Total Transactions</p>
+              <h1 class="total2">782,221</h1>
+            
+              <canvas class="canvas"
+  baseChart
+  [type]="'bar'"
+  [data]="barChartData"
+  [options]="barChartOptions"
+  style="height: 200px !important;"
+></canvas>
+            </div>
+
+           <div class="pieandtablediv">
+            <div class="piediv">
+              <p class="total">Total Members</p>
+              <h1 class="pie2">782,221</h1>
+              <div class="chart-container">
+                <canvas
+                  baseChart
+                  [data]="doughnutChartData"
+                  [options]="doughnutChartOptions"
+                  [type]="'doughnut'">
+                </canvas>
+              </div>
+            </div>
+
+            <div class="table-wrapper">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Defaulters</th>
+                    <th>No of transactions</th>
+                    <th>Total Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="product-info">
+                      <img src="/guy.jpg" alt="Corner Desk" />
+                      <div>
+                        <div class="name">Corner Desk with Cabinet</div>
+                        <div class="subtitle">Barewood</div>
+                      </div>
+                    </td>
+                    <td class="align-right">129</td>
+                    <td class="align-right">$16,641</td>
+                  </tr>
+            
+                  <tr>
+                    <td class="product-info">
+                      <img src="/guy.jpg" alt="VOYAGER68" />
+                      <div>
+                        <div class="name">VOYAGER68 v2</div>
+                        <div class="subtitle">Smokey Black, KTT Kang white</div>
+                      </div>
+                    </td>
+                    <td class="align-right">201</td>
+                    <td class="align-right">$13,467</td>
+                  </tr>
+            
+                  <tr>
+                    <td class="product-info">
+                      <img src="/guy.jpg" alt="Credenza" />
+                      <div>
+                        <div class="name">Nomura Credenza</div>
+                      </div>
+                    </td>
+                    <td class="align-right">189</td>
+                    <td class="align-right">$11,907</td>
+                  </tr>
+            
+                  <tr>
+                    <td class="product-info">
+                      <img src="/guy.jpg" alt="Shelf" />
+                      <div>
+                        <div class="name">Noir Desk Shelf</div>
+                        <div class="subtitle">Hazel</div>
+                      </div>
+                    </td>
+                    <td class="align-right">231</td>
+                    <td class="align-right">$9,009</td>
+                  </tr>
+            
+                  <tr>
+                    <td class="product-info">
+                      <img src="/guy.jpg" alt="Chair" />
+                      <div>
+                        <div class="name">Alvaro Low Back Black</div>
+                      </div>
+                    </td>
+                    <td class="align-right">93</td>
+                    <td class="align-right">$5,580</td>
+                  </tr>
+            
+                  <tr>
+                    <td class="product-info">
+                      <img src="/guy.jpg" alt="Mouse" />
+                      <div>
+                        <div class="name">Noir M1 Modular Mouse</div>
+                        <div class="subtitle">White</div>
+                      </div>
+                    </td>
+                    <td class="align-right">85</td>
+                    <td class="align-right">$3,230</td>
+                  </tr>
+                </tbody>
+              </table>
+            
+              <div class="view-more">
+                View More <span class="arrow">↗</span>
+              </div>
+            </div>
+            
+           </div>
+            
+         </div>
+        </div>
     </div>
-</body>
+    </div>
