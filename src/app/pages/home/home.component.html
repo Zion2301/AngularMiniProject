@@ -1,26 +1,49 @@
 <main>
+   <!-- Home Component Template -->
+<div class="home-container">
+    <!-- Navbar -->
     <nav class="navbar">
-       <div class="firstNav">
+      <div class="firstNav">
         <div class="logo-main">
-            <img src="/bird.png" alt="logo" class="logo">
-            <p class="title">Zraud.io</p>
+          <img src="/bird.png" alt="logo" class="logo">
+          <p class="title">Zraud.io</p>
         </div>
-
+  
         <div class="all-links">
-            <a href="#" class="link">Solution</a>
-            <a href="#" class="link">Customers</a>
-            <a href="#" class="link">Partners</a>
-            <a href="#" class="link">Resources</a>
-            <a href="#" class="link">Company</a>
-            <a routerLink="/login" class="link">Dashboard</a>
+          <a href="#" class="link">Solution</a>
+          <a href="#" class="link">Customers</a>
+          <a href="#" class="link">Partners</a>
+          <a href="#" class="link">Resources</a>
+          <a href="#" class="link">Company</a>
+          <a routerLink="/login" class="link">Dashboard</a>
         </div>
-       </div>
-
-       <div class="secnav">
+      </div>
+  
+      <div class="secnav">
         <a href="" class="link">Login</a>
         <a href="" class="special">Book a Demo</a>
-       </div>
+      </div>
+  
+      <!-- Menu Icon for smaller screens -->
+      <mat-icon class="hamburger" (click)="toggleMenu()">menu</mat-icon>
+  
+      <!-- Sliding Menu for smaller screens -->
+      <div class="sliding-menu" [ngClass]="{'open': isMenuOpen}">
+        <a href="#" class="link">Solution</a>
+        <a href="#" class="link">Customers</a>
+        <a href="#" class="link">Partners</a>
+        <a href="#" class="link">Resources</a>
+        <a href="#" class="link">Company</a>
+        <a routerLink="/login" class="link">Dashboard</a>
+        <a href="" class="link">Login</a>
+        <a href="" class="special">Book a Demo</a>
+      </div>
     </nav>
+  
+    <!-- Your other content for the HomeComponent, like a video player or other sections -->
+  </div>
+  
+    
 
     <div class="playful">
         <div class="indiv">

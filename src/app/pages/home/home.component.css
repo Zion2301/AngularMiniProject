@@ -537,3 +537,77 @@
      padding: 10px;
   }
 }
+
+/* Sliding Menu (hidden by default) */
+.sliding-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  transition: right 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliding-menu a {
+  text-decoration: none;
+  color: #fff;
+  margin: 15px 0;
+}
+
+/* Menu Icon for smaller screens */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.menu-icon-line {
+  height: 4px;
+  background-color: #fff;
+  width: 100%;
+}
+
+/* Media Query for screens smaller than 955px */
+@media (max-width: 955px) {
+  .all-links {
+    display: none;
+  }
+
+  .secnav {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .sliding-menu.open {
+    right: 0;
+  }
+
+  .navbar .hamburger {
+    display: block; /* Show hamburger icon */
+  }
+
+  .navbar .all-links.open {
+    display: block; /* Display menu when open */
+    animation: slideIn 0.3s ease-out;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
