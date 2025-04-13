@@ -525,8 +525,37 @@
   gap: 50px;
 }
 
+.cardpic {
+  width: 100%;
+}
+
+@media screen and (max-width: 1149px){
+    .footer {
+      padding: 20px;
+    }
+
+    .rightbottom {
+      gap: 20px;
+    }
+
+    .save {
+      font-size: 70px;
+    }
+
+    .woman {
+      left: 0;
+    }
+}
+
+@media screen and (max-width: 1112px){
+    .mainshi {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+}
+
 /* Media Query for screens smaller than 955px */
-@media (max-width: 955px) {
+@media (max-width: 983px) {
   .all-links {
     display: none;
   }
@@ -551,6 +580,162 @@
     display: block; /* Display menu when open */
     animation: slideIn 0.3s ease-out;
   }
+
+  .keep {
+    font-size: 40px;
+  }
+
+  .bottomfooter {
+    flex-direction: column;
+  }
+
+  .rightbottom {
+    justify-content: space-between;
+  }
+
+  .topfooter {
+    gap: 100px;
+  }
+}
+
+@media screen and (max-width: 959px){
+    .join {
+      font-size: 40px;
+    }
+
+    .overall {
+      font-size: 16px;
+    }
+
+    .womandiv {
+      flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 873px){
+    .woman {
+      width: 50%;
+    }
+
+    .save {
+      font-size: 50px;
+    }
+
+    .thirdflex {
+      flex-direction: column;
+    }
+
+    .littlethird {
+      width: 100%;
+    }
+
+    .phonediv {
+      flex-direction: column-reverse;
+    }
+
+    .rightphonediv, .leftphonediv {
+      width: 100%;
+    }
+
+    .firstflex {
+      flex-direction: column;
+    }
+
+    .leftfirst {
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 743px){
+   .womandiv {
+    padding: 10px;
+   }
+
+   .fastest {
+    font-size: 40px;
+   }
+
+   .many {
+    font-size: 18px;
+   }
+
+   .secondflex {
+    flex-direction: column;
+   }
+
+   .writeup, .mapdiv {
+    width: 100%;
+   }
+
+   .rightbottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   }
+
+   .topfooter {
+    flex-direction: column;
+   }
+
+   .topleftfooter, .toprightfooter {
+    width: 100%;
+   }
+
+   .overall {
+    font-size: 13px;
+   }
+}
+
+@media screen and (max-width: 580px){
+     .control {
+      font-size: 70px;
+     }
+
+     .from {
+      font-size: 17px;
+     }
+
+     .feel {
+        font-size: 40px;
+     }
+
+     .card, .global {
+      font-size: 20px;
+     }
+
+     .uncover, .system {
+      font-size: 15px;
+     }
+     .zraud {
+      font-size: 40px;
+     }
+
+     .with {
+      font-size: 16px;
+     }
+
+     .save {
+      font-size: 35px;
+     }
+}
+
+@media screen and (max-width: 440px){
+    .fastest {
+      font-size: 25px;
+    }
+
+    .many {
+      font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 357px){
+    .inpdiv {
+      flex-direction: column;
+    }
+
+    .sub {
+      width: 100%;
+    }
 }
 
 @keyframes slideIn {
