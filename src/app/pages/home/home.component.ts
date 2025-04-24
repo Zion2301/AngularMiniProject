@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, ViewChild, ElementRef, AfterViewInit, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MatListModule } from '@angular/material/list';
@@ -6,23 +6,29 @@ import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-home',
-  imports: [MatListModule, MatIconModule,CommonModule,RouterLink],
+  imports: [MatListModule, MatIconModule, CommonModule, RouterLink],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements AfterViewInit {
-  @ViewChild('videoPlayer') videoPlayer!: ElementRef;
-  isMenuOpen: boolean = false; // To track whether the menu is open or closed
+export class HomeComponent {
+  @ViewChild('menu') menuElement!: ElementRef;
 
-  ngAfterViewInit() {
-    if (this.videoPlayer) {
-      this.videoPlayer.nativeElement.muted = true; // Force mute on load
+  isMenuOpen: boolean = false;
+
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  // This listens for all document clicks
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent): void {
+    const clickedInsideMenu = this.menuElement?.nativeElement.contains(event.target);
+    const clickedMenuIcon = (event.target as HTMLElement).classList.contains('hamburger');
+
+    if (!clickedInsideMenu && !clickedMenuIcon) {
+      this.isMenuOpen = false;
     }
   }
-
-  // Function to toggle the sliding menu
-  toggleMenu(): void {
-    this.isMenuOpen = !this.isMenuOpen; // Change the menu's state (open/close)
-  }
 }
+
 

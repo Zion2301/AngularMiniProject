@@ -28,7 +28,7 @@
       <mat-icon class="hamburger" (click)="toggleMenu()">menu</mat-icon>
   
       <!-- Sliding Menu for smaller screens -->
-      <div class="sliding-menu" [ngClass]="{'open': isMenuOpen}">
+      <div class="sliding-menu" [ngClass]="{'open': isMenuOpen}" #menu>
         <a href="#" class="link">Technology</a>
         <a href="#" class="link">Industry</a>
         <a href="#" class="link">Collaborations</a>

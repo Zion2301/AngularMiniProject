@@ -529,6 +529,10 @@
   width: 100%;
 }
 
+.hamburger {
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 1149px){
     .footer {
       padding: 20px;
